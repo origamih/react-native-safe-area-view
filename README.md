@@ -46,3 +46,14 @@ Example:
 ```javascript
   <NavigationHeader style={{paddingTop: SafeAreaView.getInset('top')}} />
 ```
+
+### With HOC
+
+Sometimes you would prefer to use a higher-order component to wrap components.
+
+```js
+withSafeArea()(Component);
+
+// Or with forceInset props
+withSafeArea({ top: 'always' })(Component);
+```
